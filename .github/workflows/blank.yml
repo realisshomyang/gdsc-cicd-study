@@ -20,6 +20,12 @@ jobs:
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 18.x
-      - name: nodejs package 설치
+      - name: set up node.js pakcage
         run: yarn install --production
+
+      - name: install jset
+        run: yarn add jest
+
+      - name: Run test
+        run: yarn test
       
